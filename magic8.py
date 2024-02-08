@@ -1,10 +1,13 @@
 import random
-name = 'Joe'
+name = 'joe'
 question = 'Is the moon a planet?'
 answer = "Magic 8-Ball's answer:" 
 random_number = random.randint(1, 9)
 #print(random_number)
-print(name + " asks: " + question)
+if name == '':
+  print("Question:" + ' ' + question)
+else:
+  print(name + " asks: " + question)
 print('\n' + answer)
 
 if random_number == 1:
